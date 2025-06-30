@@ -60,7 +60,7 @@ The portfolio emphasizes clean layout, smooth navigation, and professional prese
 * **GitHub Pages (Optional)** – For hosting the portfolio online.
 * **Adobe Photoshop / Canva (Optional)** – For editing profile photo and logos used in the project.
 
-#output
+# output
 ![Image](https://github.com/user-attachments/assets/a987bf2c-56ab-4b08-b824-31404fdbf479)
 
 
