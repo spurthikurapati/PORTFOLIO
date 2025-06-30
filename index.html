@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Spurthi Kurapati</div>
+        <nav>
+            <a href="#" onclick="showSection('hero')">HOME</a>
+            <a href="#" onclick="showSection('education')">EDUCATION</a>
+            <a href="#" onclick="showSection('skills')">SKILLS</a>
+            <a href="#" onclick="showSection('certifications')">CERTIFICATIONS</a>
+        </nav>
+        <div class="social-icons">
+
+
+            <div class="icons">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=spurthikurapati@gmail.com"
+                   aria-label="Email"
+                   class="icon-link"
+                   target="_blank"
+                   rel="noopener">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/kurapati-spurthi-bb6170369" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+    </header>
+
+    <!-- Welcome Section -->
+    <section id="hero" class="section">
+        <div class="hero-text">
+            <h1>Welcome</h1>
+            <p>Hi, I'm Spurthi. I am a third-year B.Tech student in the Computer Science and Engineering department at R.V.R & J.C college </p>
+            <button class="btn">Learn More</button>
+        </div>
+        <div class="hero-image">
+            <img src="s3.jpg" alt="Spurthi Headshot" />
+        </div>
+    </section>
+
+    <!-- Sections -->
+    <main>
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <div class="education-item">
+                <img src="rvricon.ico" alt="B.Tech Image" />
+                <p><strong>B.Tech(CSE) </strong> – R.V.R & J.C College of Engineering</p>
+            </div>
+            <div class="education-item">
+                <img src="scjc.jpeg" alt="Intermediate Image" />
+                <p><strong>Intermediate (MPC)</strong> – Sri Chaitanya Junior College</p>
+            </div>
+            <div class="education-item">
+                <img src="scts.png" alt="SSC Image" />
+                <p><strong>SSC</strong> – Sri Chaitanya Techno School</p>
+            </div>
+        </section>
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skills-container-bar">
+
+                <div class="skill-bar">
+                    <span class="skill-title">C Language</span>
+                    <div class="bar">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <span class="skill-title">C++ Language</span>
+                    <div class="bar">
+                        <div class="progress" style="width: 40%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <span class="skill-title">Python Language</span>
+                    <div class="bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <span class="skill-title">Java Language</span>
+                    <div class="bar">
+                        <div class="progress" style="width: 65%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <span class="skill-title">SQL</span>
+                    <div class="bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <span class="skill-title">DBMS</span>
+                    <div class="bar">
+                        <div class="progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <span class="skill-title">Frontend Development</span>
+                    <div class="bar">
+                        <div class="progress" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="section">
+            <h2>Certifications</h2>
+            <ul class="cert-list">
+                <li>
+                    <strong>dbms – nptel:</strong>
+                    <a href="Dbms.pdf" target="_blank">View Certificate</a>
+                </li>
+                <li>
+                    <strong>aiml – virtual internship:</strong>
+                    <a href="aiml.pdf" target="_blank">View Certificate</a>
+                </li>
+                <li>
+                    <strong>android - virtual internship:</strong>
+                    <a href="android.pdf" target="_blank">View Certificate</a>
+                </li>
+                <li>
+                    <strong>google – short-Term internship:</strong>
+                    <a href="google.pdf" target="_blank">View Certificate</a>
+                </li>
+                <li>
+                    <strong>Web Development - virtual internship:</strong>
+                    <a href="web.pdf" target="_blank">View Certificate</a>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Script -->
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(sec => sec.style.display = 'none');
+
+            // Show selected section
+            const target = document.getElementById(sectionId);
+            if (target) {
+                target.style.display = 'block';
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Show only hero on load
+        window.onload = () => {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(sec => sec.style.display = 'none');
+            const hero = document.getElementById('hero');
+            if (hero) hero.style.display = 'block';
+        };
+    </script>
+</body>
+</html>
