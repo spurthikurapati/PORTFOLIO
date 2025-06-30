@@ -1,4 +1,4 @@
-#MY-PORTFOLIO
+# MY-PORTFOLIO
 
 COMPANY: CODTECH IT SOLUTIONS
 
@@ -12,7 +12,7 @@ DURATION: 4 WEEKS
 
 MENTOR:NEELA SANTOSH
 
-##DESCRIPTION OF TASK
+## DESCRIPTION OF TASK
 Here's a complete `README.md` file tailored for your **Portfolio Website**:
 
 ---
